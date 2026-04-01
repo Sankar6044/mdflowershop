@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flower Shop | Beautiful & Fresh Flowers</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Welcome to our passionate flower shop. We provide fresh and beautiful flowers for all occasions like weddings, birthdays, and special events. Same-day delivery available.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+    <!-- 1. Welcome Animation Screen -->
+    <div id="welcome-screen" class="welcome-screen">
+        <!-- Falling Petals Container -->
+        <div class="petals-container" id="petals-container"></div>
+        
+        <div class="welcome-content">
+            <h1 class="blooming-text">Welcome to <span class="unique-brand-name">MD FLOWER</span> 🌸</h1>
+            <button id="enter-btn" class="btn btn-primary enter-btn">Enter Shop</button>
+        </div>
+    </div>
+
+    <!-- Main Content (Hidden initially) -->
+    <div id="main-content" class="main-hidden">
+        
+        <!-- 2. Navigation Bar -->
+        <nav class="navbar" id="navbar">
+            <div class="nav-container">
+                <div class="brand-wrapper">
+                    <a href="#home" class="nav-brand">Bloom & Beauty</a>
+                    <span class="brand-owner">Owned by Murugesh & Divya</span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#menu">Flowers Menu</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="mobile-menu-btn" id="mobile-menu-btn">
+                    <i data-lucide="menu"></i>
+                </div>
+            </div>
+            <!-- Mobile Links Dropdown -->
+            <ul class="mobile-nav-links" id="mobile-nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Flowers Menu</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- 6. Hero Banner -->
+        <header id="home" class="hero fade-in-section">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h1 class="hero-title">Fresh Flowers for Every Occasion</h1>
+                <p class="hero-subtitle">Express your feelings with our premium, hand-picked floral arrangements.</p>
+                <a href="#menu" class="btn btn-primary">Explore Collection</a>
+            </div>
+        </header>
+
+        <!-- 3. Flowers Menu Section -->
+        <section id="menu" class="section bg-light fade-in-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Our Beautiful Flowers</h2>
+                    <p>Discover our wide variety of lovely flowers and arrangements, carefully curated for you.</p>
+                </div>
+                
+                <div class="menu-grid">
+                    <!-- Item 1 -->
+                    <div class="menu-card">
+                        <div class="card-img-wrapper">
+                            <img src="images/roses_1775018766044.png" alt="Roses 🌹" class="card-img">
+                        </div>
+                        <div class="card-content">
+                            <h3>Roses 🌹</h3>
+                            <p>Classic and romantic red and pink roses, perfect for expressing deep love and passion.</p>
+                        </div>
+                    </div>
+                    <!-- Item 2 -->
+                    <div class="menu-card">
+                        <div class="card-img-wrapper">
+                            <img src="images/lilies_1775018787776.png" alt="Lilies 🌼" class="card-img">
+                        </div>
+                        <div class="card-content">
+                            <h3>Lilies 🌼</h3>
+                            <p>Elegant and fragrant lilies in full bloom, symbolizing purity and refined beauty.</p>
+                        </div>
+                    </div>
+                    <!-- Item 3 -->
+                    <div class="menu-card">
+                        <div class="card-img-wrapper">
+                            <img src="images/tulips_1775018811826.png" alt="Tulips 🌷" class="card-img">
+                        </div>
+                        <div class="card-content">
+                            <h3>Tulips 🌷</h3>
+                            <p>Vibrant spring tulips in beautiful colors, bringing joy and a sense of fresh beginnings.</p>
+                        </div>
+                    </div>
+                    <!-- Item 4 -->
+                    <div class="menu-card">
+                        <div class="card-img-wrapper">
+                            <img src="images/orchids_1775018866335.png" alt="Orchids 🌺" class="card-img">
+                        </div>
+                        <div class="card-content">
+                            <h3>Orchids 🌺</h3>
+                            <p>Exotic and luxurious purple orchids, offering long-lasting elegance and sophistication.</p>
+                        </div>
+                    </div>
+                    <!-- Item 5 -->
+                    <div class="menu-card">
+                        <div class="card-img-wrapper">
+                            <img src="images/bouquets_1775018919584.png" alt="Bouquets 💐" class="card-img">
+                        </div>
+                        <div class="card-content">
+                            <h3>Bouquets 💐</h3>
+                            <p>Beautiful mixed luxury bouquets, hand-tied and ready to brighten anyone's special day.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. About Us Section -->
+        <section id="about" class="section fade-in-section">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-text">
+                        <div class="section-header align-left">
+                            <h2>About Us</h2>
+                        </div>
+                        <p class="about-description">
+                            We are a passionate flower shop located in Krishnagiri District, Hosur to Royakottai Main Road, Dhotta Mettarai. We provide fresh and beautiful flowers for all occasions like weddings, birthdays, and special events.
+                        </p>
+                        <ul class="about-perks">
+                            <li>
+                                <i data-lucide="check-circle" class="perk-icon"></i>
+                                <span>We ensure freshness and quality</span>
+                            </li>
+                            <li>
+                                <i data-lucide="truck" class="perk-icon"></i>
+                                <span>Same-day delivery available</span>
+                            </li>
+                            <li>
+                                <i data-lucide="gift" class="perk-icon"></i>
+                                <span>Custom bouquet design</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="about-image-wrapper">
+                        <!-- Reusing the bouquet image to make the about section look beautiful -->
+                        <img src="images/bouquets_1775018919584.png" alt="Flower Bouquet" class="about-image">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. Contact Section -->
+        <section id="contact" class="section bg-light fade-in-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Get in Touch</h2>
+                    <p>Contact us for custom orders, events, or any inquiries. We'd love to hear from you!</p>
+                </div>
+                
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <div class="info-card">
+                            <div class="info-icon">
+                                <i data-lucide="phone"></i>
+                            </div>
+                            <div class="info-details">
+                                <h3>Call Us</h3>
+                                <p>82207 45928</p>
+                                <p>93844 45564</p>
+                                <div class="action-buttons">
+                                    <a href="tel:+918220745928" class="btn btn-call"><i data-lucide="phone-call" class="btn-icon"></i> Call</a>
+                                    <a href="https://wa.me/918220745928" target="_blank" class="btn btn-whatsapp"><i data-lucide="message-circle" class="btn-icon"></i> WhatsApp</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info-card">
+                            <div class="info-icon">
+                                <i data-lucide="map-pin"></i>
+                            </div>
+                            <div class="info-details">
+                                <h3>Visit Us</h3>
+                                <p>Hosur to Royakottai Main Road,<br>Dhotta Mettarai,<br>Krishnagiri District</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-form-wrapper">
+                        <form id="contact-form" class="contact-form" onsubmit="event.preventDefault(); alert('Message sent successfully!');">
+                            <div class="form-group">
+                                <label for="name">Your Name</label>
+                                <input type="text" id="name" name="name" placeholder="John Doe" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" placeholder="+91 XXXXX XXXXX" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="4" placeholder="How can we help you?" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container footer-grid">
+                <div class="footer-brand">
+                    <h2>Bloom & Beauty</h2>
+                    <p>Delivering smiles and fresh scents every day. Your trusted partner for all floral needs.</p>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact Info</h3>
+                    <p><i data-lucide="phone"></i> 82207 45928, 93844 45564</p>
+                    <p><i data-lucide="map-pin"></i> Hosur to Royakottai Main Rd, Dhotta Mettarai</p>
+                </div>
+                <div class="footer-social">
+                    <h3>Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon"><i data-lucide="instagram"></i></a>
+                        <a href="#" class="social-icon"><i data-lucide="facebook"></i></a>
+                        <a href="#" class="social-icon"><i data-lucide="twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Bloom & Beauty Flower Shop. All rights reserved.</p>
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- Initialize Main Script -->
+    <script src="script.js"></script>
+</body>
+</html>
